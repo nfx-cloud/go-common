@@ -20,6 +20,7 @@ var Levels = map[string]zapcore.Level{
 	"fatal": zapcore.FatalLevel,
 }
 
+// InitLog 初始化日志
 func InitLog() {
 	var cores []zapcore.Core
 	writer := viper.GetString("log.writer")
