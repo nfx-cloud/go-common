@@ -35,7 +35,7 @@ func InitLog() {
 
 	logger := zap.New(
 		zapcore.NewTee(cores...),
-		zap.AddCallerSkip(2),
+		zap.AddCallerSkip(1),
 		zap.AddCaller(),
 	)
 
