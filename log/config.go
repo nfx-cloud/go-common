@@ -38,7 +38,6 @@ func InitLog() {
 		zap.AddCallerSkip(1),
 		zap.AddCaller(),
 	)
-
 	sugar = logger.Sugar()
 }
 
